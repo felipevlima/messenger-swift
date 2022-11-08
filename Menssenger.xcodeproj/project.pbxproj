@@ -19,6 +19,7 @@
 		E3D456B42919DC2400556C53 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D456B32919DC2400556C53 /* VideoPlayerViewController.swift */; };
 		E3D456B62919DC3F00556C53 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D456B52919DC3F00556C53 /* NewConversationViewController.swift */; };
 		E3D456B82919DC7500556C53 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D456B72919DC7500556C53 /* ProfileViewController.swift */; };
+		E3D456BB2919E06400556C53 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D456BA2919E06400556C53 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E3D456B32919DC2400556C53 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		E3D456B52919DC3F00556C53 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		E3D456B72919DC7500556C53 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E3D456BA2919E06400556C53 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				E3D456932919D73E00556C53 /* AppDelegate.swift */,
 				E3D456952919D73E00556C53 /* SceneDelegate.swift */,
+				E3D456BA2919E06400556C53 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -114,8 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				E3D456972919D73E00556C53 /* ConversationsViewController.swift */,
-				E3D456AD2919DBDC00556C53 /* LoginViewController.swift */,
-				E3D456AF2919DBFF00556C53 /* RegisterViewController.swift */,
+				E3D456B92919DCD000556C53 /* Login */,
 				E3D456B12919DC1100556C53 /* PhotoViewerViewController.swift */,
 				E3D456B32919DC2400556C53 /* VideoPlayerViewController.swift */,
 				E3D456B52919DC3F00556C53 /* NewConversationViewController.swift */,
@@ -131,6 +133,15 @@
 				E3D4569E2919D74000556C53 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E3D456B92919DCD000556C53 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E3D456AD2919DBDC00556C53 /* LoginViewController.swift */,
+				E3D456AF2919DBFF00556C53 /* RegisterViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 				E3D456B62919DC3F00556C53 /* NewConversationViewController.swift in Sources */,
 				E3D456982919D73E00556C53 /* ConversationsViewController.swift in Sources */,
 				E3D456B42919DC2400556C53 /* VideoPlayerViewController.swift in Sources */,
+				E3D456BB2919E06400556C53 /* Extensions.swift in Sources */,
 				E3D456942919D73E00556C53 /* AppDelegate.swift in Sources */,
 				E3D456B82919DC7500556C53 /* ProfileViewController.swift in Sources */,
 				E3D456962919D73E00556C53 /* SceneDelegate.swift in Sources */,
@@ -361,6 +373,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Menssenger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a profile picture";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow accesss to select a photo for your profile";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -391,6 +405,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Menssenger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a profile picture";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow accesss to select a photo for your profile";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
